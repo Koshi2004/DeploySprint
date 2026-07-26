@@ -4,11 +4,11 @@ Complete this file on `main` as tasks are completed. Do not paste secrets, priva
 
 ## Team
 
-- Team name: blackops
+- Team name:
 - Team members:
 - Live IP URL:
 - Assigned domain URL:
-- Repository URL: https://github.com/knurdz/deploy-sprint-finale-team-blackops
+- Repository URL:
 
 ## Release Evidence
 
@@ -16,7 +16,7 @@ Complete this file on `main` as tasks are completed. Do not paste secrets, priva
 - Current artifact/image identifier:
 - Current deployment workflow run:
 - Current release manifest path or URL:
-- Notes on live evidence or fallback evidence: T01 adds a build-time generator (`team-site/scripts/generate-status.mjs`) that writes `dist/health` (`ok`) and `dist/status` (JSON with team, commit SHA, release ID, deploy time, `T01` marker) on every `npm run build`, so the values reflect the commit actually being deployed instead of being hardcoded. Live `IP_PUBLIC_URL`/`/health`/`/status` verification is pending the first organizer deploy run after merge.
+- Notes on live evidence or fallback evidence:
 
 ## Score Summary
 
