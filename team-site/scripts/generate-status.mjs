@@ -20,9 +20,12 @@ const commitSha = resolveCommitSha();
 const releaseId = process.env.GITHUB_RUN_ID ?? commitSha.slice(0, 7);
 const teamName = process.env.TEAM_NAME ?? 'blackops';
 const deployTime = new Date().toISOString();
+<<<<<<< HEAD
 const domainConnected = process.env.DOMAIN_CONNECTED === 'true';
 const assignedDomain = process.env.ASSIGNED_DOMAIN ?? null;
 const domainRecordType = process.env.DNS_RECORD_TYPE ?? null;
+=======
+>>>>>>> 8e442c41695b2d0a31cd6bc06bbff211cd92b93b
 
 mkdirSync(distDir, { recursive: true });
 
@@ -34,12 +37,15 @@ const status = {
   commit: commitSha,
   releaseId: String(releaseId),
   deployTime,
+<<<<<<< HEAD
   domain: {
     connected: domainConnected,
     host: assignedDomain,
     recordType: domainRecordType,
     verifiedAt: domainConnected ? deployTime : null,
   },
+=======
+>>>>>>> 8e442c41695b2d0a31cd6bc06bbff211cd92b93b
 };
 
 writeFileSync(join(distDir, 'status'), `${JSON.stringify(status, null, 2)}\n`);
